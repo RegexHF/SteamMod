@@ -3,3 +3,6 @@
 
 <h1>Indev</h1>
 <p>At the moment, Steam Mod is in development, it will continue to be in development forever, the original Modification is for minecraft but as a POC it will use the IRC protocol. Iridium Mod might be released, building off the Iridium 3 client and adding certain funcationality (or just become a new client all together)
+
+<h1>Libraries</h1>
+<p>Steam Mod API<br>PircBot Library</p>
