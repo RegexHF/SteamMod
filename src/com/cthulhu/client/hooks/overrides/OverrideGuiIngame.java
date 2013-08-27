@@ -6,6 +6,8 @@ import java.util.List;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL12;
 
+import com.cthulhu.client.hooks.hook.HookGuiIngame;
+
 import net.minecraft.src.Block;
 import net.minecraft.src.Chunk;
 import net.minecraft.src.Direction;
@@ -269,7 +271,7 @@ public class OverrideGuiIngame extends GuiIngame
         {
             this.mc.mcProfiler.startSection("debug");
             GL11.glPushMatrix();
-            var8.drawStringWithShadow("Steam Modification" + this.mc.debug + ")", 2, 2, 16777215);
+            var8.drawStringWithShadow("Steam Modification " + this.mc.debug + ")", 2, 2, 16777215);
             var8.drawStringWithShadow(this.mc.debugInfoRenders(), 2, 12, 16777215);
             var8.drawStringWithShadow(this.mc.getEntityDebug(), 2, 22, 16777215);
             var8.drawStringWithShadow(this.mc.debugInfoEntities(), 2, 32, 16777215);
@@ -304,6 +306,8 @@ public class OverrideGuiIngame extends GuiIngame
         }
         else
         {
+        	
+        	HookGuiIngame.renderGameOverlay(var5);
         	
         }
 

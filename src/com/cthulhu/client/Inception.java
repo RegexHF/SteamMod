@@ -20,5 +20,10 @@ public class Inception
 	{
 		return _inception._wrapper;
 	}
+	
+	public void init()
+	{
+		_wrapper.getObjectManager().registerObject(null);
+	}
 
 }

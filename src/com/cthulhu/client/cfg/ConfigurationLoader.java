@@ -12,6 +12,11 @@ public class ConfigurationLoader
 	
 	public ConfigurationLoader()
 	{
+		
+	}
+	
+	public void load()
+	{
 		utils.mkfolder("Inception");
 		utils.mkfile("Inception/configuration.ldc");
 		
